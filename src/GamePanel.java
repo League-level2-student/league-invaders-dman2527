@@ -13,7 +13,9 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener{
 	Timer frameDraw ;
 	Font titleFont = new Font("Arial",Font.PLAIN,48);
 	Font subFont = new Font("Arial",Font.PLAIN,24);
+	Rocketship rocketship = new Rocketship(250,750,50,50);
 	@Override
+	
 	public void paintComponent(Graphics g){
 
 
@@ -49,7 +51,7 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener{
 	   g.drawString("Press SPACE for Instructions", 85, 500);
    }
    public void drawGameState(Graphics g) { 
-	   
+	   rocketship.draw(g);
    }
    public void drawEndState(Graphics g)  {  
 	   g.setColor(Color.BLUE);

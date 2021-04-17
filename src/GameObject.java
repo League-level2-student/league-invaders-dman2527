@@ -7,7 +7,9 @@ public class GameObject {
 	 int speed = 0;
 	 boolean isActive = true;
 	 public GameObject(int x, int y, int width, int height) {
-			
+		 
+	 }
+	 public void update(){
 	 }
 
 }
