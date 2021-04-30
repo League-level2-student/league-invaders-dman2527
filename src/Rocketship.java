@@ -11,5 +11,16 @@ public class Rocketship extends GameObject  {
 		 g.setColor(Color.BLUE);
 	     g.fillRect(x, y, width, height);
 	}
-	
+	public void right() {
+        x+=speedrocket;
+    }
+	public void up() {
+        y-=speedrocket;
+    }
+	public void left() {
+        x-=speedrocket;
+    }
+	public void down() {
+        y+=speedrocket;
+    }
 }
