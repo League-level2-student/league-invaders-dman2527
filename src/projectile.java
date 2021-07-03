@@ -1,14 +1,14 @@
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class Alien extends GameObject{
+public class projectile extends GameObject{
 
-	public Alien(int x, int y, int width, int height) {
+	public projectile(int x, int y, int width, int height) {
 		super(x, y, width, height);
 		// TODO Auto-generated constructor stub
 	}
 	public void update(){
-		this.y += this.speedalien;
+		this.y -= this.speedprojectile;
 	 }
 	public void draw(Graphics g){
 		 g.setColor(Color.YELLOW);
